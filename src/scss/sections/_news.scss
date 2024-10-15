@@ -1,9 +1,10 @@
-// 
-// Projects
-// 
+//
+// News
+//
 
-.projects-section {
-    padding: 10rem 0;
+.news-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     .featured-text {
         padding: 2rem;
@@ -21,5 +22,9 @@
         @include media-breakpoint-up(lg) {
             padding: 5rem;
         }
+    }
+
+    .post {
+        padding-bottom: 2rem;
     }
 }

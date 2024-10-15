@@ -1,32 +1,36 @@
-// 
+//
 // Navbar
-// 
+//
 
 #mainNav {
     min-height: 3.5rem;
     background-color: $white;
 
+    // The "Menu" toggler in mobile mode
     .navbar-toggler {
         font-size: 80%;
         padding: 0.75rem;
-        color: $primary;
-        border: $border-width solid $primary;
+        color: $modern-bright;
+        border: $border-width solid $modern-bright;
 
         &:focus {
             outline: none;
         }
     }
 
+    // Brand
     .navbar-brand {
         color: $black;
         font-weight: 700;
         padding: 0.9rem 0;
+        font-size: 1.25rem;
     }
 
+    // Navigation buttons
     .navbar-nav {
         .nav-item {
             &:hover {
-                color: fade($white, 80%);
+                //color: fade($white, 80%);
                 outline: none;
                 background-color: transparent;
             }
@@ -43,25 +47,28 @@
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
-        background-color: transparent;
+        background-color: $white;
         transition: background-color 0.3s ease-in-out;
 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: fade-out($white, 0.5);
         }
 
         .nav-link {
-            transition: none;
+            transition: color 0.15s ease-in-out,
+                background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out;
             padding: 2rem 1.5rem;
-            color: fade-out($white, 0.5);
+            color: $modern;
+            border-bottom: 0.25rem solid transparent;
 
             &:hover {
-                color: fade-out($white, 0.25);
+                color: $modern-bright;
             }
 
             &:active {
-                color: $white;
+                color: $modern-bright;
+                border-bottom: 0.25rem solid $modern-bright;
             }
         }
 
@@ -73,22 +80,22 @@
             }
 
             .nav-link {
-                color: $black;
-                padding: 1.5rem 1.5rem 1.25rem;
+                color: $modern;
+                //padding: 1.5rem 1.5rem 1.25rem;
                 border-bottom: 0.25rem solid transparent;
 
                 &:hover {
-                    color: $primary;
+                    color: $modern-bright;
                 }
 
                 &:active {
-                    color: darken($primary, 15%);
+                    //color: darken($modern-bright, 15%);
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $modern-bright;
                     outline: none;
-                    border-bottom: 0.25rem solid $primary;
+                    border-bottom: 0.25rem solid $modern-bright;
                 }
             }
         }

@@ -1,3 +1,8 @@
+/*!
+* Start Bootstrap - arnaujose v1.0.0 (https://arnaujose.github.io/)
+* Copyright 2013-2024 Arnau José
+* Licensed under CC-BY-NC-ND-4.0 (https://github.com/StartBootstrap/arnaujose/blob/master/LICENSE)
+*/
 //
 // Scripts
 //

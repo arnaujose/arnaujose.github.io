@@ -1,205 +1,104 @@
 doctype html
-html(lang='en')
+html(lang='ca')
 
     head
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='author', content='Arnau José')
 
-        title Grayscale - Start Bootstrap Theme
+        title arnaujose
 
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/png', href='assets/icons/profile-modern.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap", rel="stylesheet")
+        
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
+
+    // P A G E - T O P
     body#page-top
 
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
-            .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Start Bootstrap
-                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto
-                        li.nav-item
-                            a.nav-link(href='#about') About
-                        li.nav-item
-                            a.nav-link(href='#projects') Projects
-                        li.nav-item
-                            a.nav-link(href='#signup') Contact
+        .main-content
+            // Navigation
+            nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+                .container.px-4.px-lg-5
+                    a.navbar-brand(href='#page-top') INICI
+                    button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                        | Menú &nbsp;
+                        i.fas.fa-bars
+                    #navbarResponsive.collapse.navbar-collapse
+                        ul.navbar-nav.ms-auto
+                            li.nav-item
+                                a.nav-link(href='#news') Novetats
+                            li.nav-item
+                                a.nav-link(href='https://arnaudev.wordpress.com/Apunts/') EDU
+                            li.nav-item
+                                a.nav-link(href='https://arnaudev.wordpress.com/Dev/') DEV
+                            li.nav-item
+                                a.nav-link(href='https://forms.office.com/r/Bwxh1gnXYY') Contacte
 
-        // Masthead
-        header.masthead
-            .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
-                .d-flex.justify-content-center
-                    .text-center
-                        h1.mx-auto.my-0.text-uppercase Grayscale
-                        h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
-                        a.btn.btn-primary(href='#about') Get Started
+            // Masthead
+            header.masthead
+                .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
+                    .d-flex.justify-content-center
+                        .text-center
+                            h1.mx-auto.my-0.text-uppercase
+                                a.nav-link(href="https://arnaujose.github.io/") ARNAUJOSÉ
 
-        // About
-        section#about.about-section.text-center
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.justify-content-center
-                    .col-lg-8
-                        h2.text-white.mb-4 Built with Bootstrap 5
-                        p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/theme/grayscale/') the preview page.
-                            | The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='...')
+            // Welcome
+            section#welcome.welcome-section.text-left
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5.justify-content-left
+                        .col-lg-20
+                            h2.text-black.mb-4 Benvinguts al nou bloc (en construcció)!
+                            p.text-black-50.mb-4
+                                | Consulteu la secció Novetats per a veure l'activitat al bloc en format de posts, a Edu hi trobareu tot el relacionat amb ensenyament i a Dev hi trobareu tots els programes actualitzats que he anat fent.
+                                br
+                                br
+                                | Arnau José, 13 d'octubre de 2024.
 
-        // Projects
-        section#projects.projects-section.bg-light
-            .container.px-4.px-lg-5
-                // Featured Project Row
-                .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
-                // Project One Row
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                // Project Two Row
-                .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well!
 
-        // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
+            // News
+            section#news.news-section.bg-light
+                .container.px-4.px-lg-5
+                    
+                    h2.text-black.mb-4 Novetats
+                    
+                    // (News from scripts.js will be displayed here)
 
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-                        
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
-
-        // Contact
-        section.contact-section.bg-black
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
-                                hr.my-4.mx-auto
-                                .small.text-black-50 4923 Market Street, Orlando FL
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-envelope.text-primary.mb-2
-                                h4.text-uppercase.m-0 Email
-                                hr.my-4.mx-auto
-                                .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-mobile-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Phone
-                                hr.my-4.mx-auto
-                                .small.text-black-50 +1 (555) 902-8832
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
-                        i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
 
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Your Website 2023
+                p(xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/")
+                    | Els materials, en tant que imatges, PDF's i vídeos, de la web
+                    |
+                    a(property="dct:title" rel="cc:attributionURL" href="https://arnaujose.github.io/") arnaujose.github.io
+                    |
+                    | d'
+                    a(rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/arnaujose") Arnau José
+                    |
+                    | estan llicenciats sota
+                    |
+                    a(href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;")
+                        | Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+                        img(style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC")
+                        img(style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="BY")
+                        img(style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="NC")
+                        img(style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="ND")
+
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

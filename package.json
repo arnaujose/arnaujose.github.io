@@ -1,7 +1,7 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "7.0.6",
+    "title": "arnaujose",
+    "name": "arnaujose",
+    "version": "1.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,40 +12,25 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/theme/grayscale",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "description": "Benvinguts al bloc!",
+    "homepage": "https://arnaujose.github.io/",
+    "license": "CC-BY-NC-ND-4.0",
+    "author": "Arnau José",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
+        "url": "https://github.com/arnaujose/arnaujose.github.io.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
-        "browser-sync": "2.29.1",
+        "browser-sync": "^3.0.3",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
-        "postcss": "8.4.21",
+        "postcss": "^8.4.47",
         "prettier": "2.8.6",
-        "pug": "3.0.2",
+        "pug": "^3.0.2",
         "sass": "1.60.0",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
